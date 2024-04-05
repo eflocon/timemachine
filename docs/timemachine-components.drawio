@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net" modified="2024-04-05T21:53:16.289Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15" etag="fR7wtS2YmfNpZ0fnWtPH" version="24.2.2" type="device">
+  <diagram id="VxUDjRD-I5sZxwliuoLu" name="Page-1">
+    <mxGraphModel dx="794" dy="1236" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UWLk7HB4MSR8OCQueMQN-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;curved=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="UWLk7HB4MSR8OCQueMQN-1" target="UWLk7HB4MSR8OCQueMQN-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UWLk7HB4MSR8OCQueMQN-1" value="1 Solar-Panel" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="214" y="155" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UWLk7HB4MSR8OCQueMQN-4" value="9 Eurobox&lt;br&gt;600 x 400 mm" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="214" y="895" width="400" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="UWLk7HB4MSR8OCQueMQN-34" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" source="UWLk7HB4MSR8OCQueMQN-6" target="UWLk7HB4MSR8OCQueMQN-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="694" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UWLk7HB4MSR8OCQueMQN-6" value="6 pcb" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="254" y="555" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UWLk7HB4MSR8OCQueMQN-36" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="UWLk7HB4MSR8OCQueMQN-7" target="UWLk7HB4MSR8OCQueMQN-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="254" y="565" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UWLk7HB4MSR8OCQueMQN-7" value="8 battery" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="224" y="715" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UWLk7HB4MSR8OCQueMQN-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;curved=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="UWLk7HB4MSR8OCQueMQN-8" target="UWLk7HB4MSR8OCQueMQN-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UWLk7HB4MSR8OCQueMQN-8" value="4 single-board computer" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="334" y="395" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UWLk7HB4MSR8OCQueMQN-40" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="UWLk7HB4MSR8OCQueMQN-9" target="UWLk7HB4MSR8OCQueMQN-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="418" y="445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UWLk7HB4MSR8OCQueMQN-9" value="5 software&lt;br&gt;ntp-server" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="454" y="475" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UWLk7HB4MSR8OCQueMQN-10" value="3 WIFI-antenna" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="454" y="315" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UWLk7HB4MSR8OCQueMQN-38" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="UWLk7HB4MSR8OCQueMQN-11" target="UWLk7HB4MSR8OCQueMQN-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UWLk7HB4MSR8OCQueMQN-11" value="7 switches + indicators" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="464" y="635" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UWLk7HB4MSR8OCQueMQN-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;curved=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="UWLk7HB4MSR8OCQueMQN-15" target="UWLk7HB4MSR8OCQueMQN-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UWLk7HB4MSR8OCQueMQN-15" value="2 GPS-Module +&lt;br&gt;GPS Antenna" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="334" y="235" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UWLk7HB4MSR8OCQueMQN-41" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=12;curved=1;width=82;endSize=16.33;endWidth=80;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="424" y="785" as="sourcePoint" />
+            <mxPoint x="424" y="875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
