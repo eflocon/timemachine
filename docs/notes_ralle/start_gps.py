@@ -2,6 +2,7 @@ import RPi.GPIO as GPIO
 import serial
 import time
 from datetime import datetime
+import subprocess
 
 PWRKEY: int
 ser: serial.Serial
@@ -9,7 +10,7 @@ ser: serial.Serial
 
 def initialize():
     global ser, PWRKEY
-    ser = serial.Serial('/dev/ttyAMA0', 9600, timeout=1)
+    ser = serial.Serial('/dev/serial0', 9600, timeout=1)
     PWRKEY = 4
     GPIO.setmode(GPIO.BCM)
 
@@ -83,15 +84,31 @@ def get_gps_data():
     return response
 
 
-def parse_date_time(response):
+def parse_date_time(response) -> datetime:
     try:
         date_time_str = response.decode().split(',')[4]
         date_time_obj = datetime.strptime(date_time_str, '%Y%m%d%H%M%S.%f')
         print(date_time_obj)
+        return date_time_obj
     except ValueError:
         print(f"Could not parse date and time from '{date_time_str}'")
     except IndexError:
         print("The expected data was not found in the response. Is GPS module switched on?")
+
+
+def setDate():
+    is_date_plausible: bool = False
+    temp_time: datetime
+
+    while not is_date_plausible:
+        response = get_gps_data()
+        temp_time = parse_date_time(response)
+        if temp_time is not None and temp_time.year == 2024:
+            is_date_plausible = True
+            print(f"Plausible date and time: {temp_time}")
+
+    command = f"date -s '{temp_time}'"
+    subprocess.run(command, shell=True, check=True)
 
 
 def main():
@@ -104,10 +121,7 @@ def main():
         power_on_gps()
 
     # start actual work
-    for i in range(1, 20):
-        response = get_gps_data()
-        parse_date_time(response)
-
+    setDate()
     # end actual work
 
     power_toggle_module()
