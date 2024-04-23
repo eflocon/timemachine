@@ -103,11 +103,11 @@ def setDate():
     while not is_date_plausible:
         response = get_gps_data()
         temp_time = parse_date_time(response)
-        if temp_time is not None and temp_time.year == 2024:
+        if temp_time is not None and temp_time.year >= 2024:
             is_date_plausible = True
             print(f"Plausible date and time: {temp_time}")
 
-    command = f"date -s '{temp_time}'"
+    command = f"date -u -s '{temp_time}'"
     subprocess.run(command, shell=True, check=True)
 
 
